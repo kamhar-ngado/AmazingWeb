@@ -1,0 +1,96 @@
+q:before,
+q:after {
+
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*style*/
+body {
+    font: 16px/28px arial, sans-serif;
+    background-color: rgb(185, 185, 185);
+    background-image: url(img/full-bloom.png);
+    color: rgb(211, 207, 205);
+}
+
+
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: rgba(37, 37, 37, 0.712);
+}
+
+
+.header {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: lightcoral;
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color: rgb(90, 173, 247);
+    color: white;
+}
+
+.foto {
+    height: 250px;
+    background-image: url(img/ngoding.jpg);
+    background-size: cover;
+    background-position: 0 -180px;
+    border-top: 5px solid lightcoral;
+    border-bottom: 5px solid lightcoral;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.content author {
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+.author a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.content a:hover {
+    background-color: rgb(90, 173, 247);
+    color: white;
+}
+
+.footer {
+    background-color: lightcoral;
+}
+
+.footer {
+    text-align: center;
+}

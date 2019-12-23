@@ -87,6 +87,12 @@ body {
     color: white;
 }
 
+.tabel table tr td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 1px;
+}
+
 .footer {
     background-color: lightcoral;
 }

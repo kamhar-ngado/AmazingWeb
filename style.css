@@ -58,7 +58,7 @@ body {
     height: 250px;
     background-image: url(img/ngoding.jpg);
     background-size: cover;
-    background-position: 0 -180px;
+    background-position: 0 -100px;
     border-top: 5px solid lightcoral;
     border-bottom: 5px solid lightcoral;
 }
@@ -85,6 +85,11 @@ body {
 .content a:hover {
     background-color: rgb(90, 173, 247);
     color: white;
+}
+
+.bahasa a {
+    color: rgb(211, 207, 205);
+    text-decoration: none;
 }
 
 .tabel table tr td {

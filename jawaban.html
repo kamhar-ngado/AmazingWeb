@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          jax: ["input/TeX", "output/HTML-CSS"],
+          extensions: ["tex2jax.js"],
+          "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] },
+          tex2jax: { inlineMath: [ ["$", "$"], ["\\(","\\)"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+          TeX: { noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } } },
+          messageStyle: "none"
+        });
+        </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"></script>
+</head>
+
+<body>
+    <p>
+        <br>Diketahui:</br>
+        <br>$\mathop {\lim }\limits_{x \to 0} \frac{{f(x)}}{x} = 2$,</br>
+        <br>$\mathop {\lim }\limits_{x \to 0} \frac{{f(x)}}{{\sqrt {1 - x}  - 1}}$</br>
+        <br>Ditanyakan:</br>
+        <br>tentukan $\mathop {\lim }\limits_{x \to 0} \frac{{f(x)}}{{\sqrt {1 - x}  - 1}}$</br>
+    </p>
+    <p>
+        <br>Merencanakan Penyelesaian:</br>
+        <br>Substitusi nilai $f(x)$ pada $\mathop {\lim }\limits_{x \to 0} \frac{{f(x)}}{x} = 2$</br>
+        <br>Melakukan perkalian sekawan</br>
+    </p>
+    <p>
+        <br>Melaksanakan Rencana Penyelesaian:</br>
+        <br>
+        <div align="left">
+            $\mathop {\lim }\limits_{x \to 0} \frac{{f(x)}}{x}.x = 2x$
+            $\mathop {\lim }\limits_{x \to 0} f\left( x \right) = 2x$
+            $\mathop {\lim }\limits_{x \to 0} \frac{{f\left( x \right)}}{{\sqrt {1 - x}  - 1}} = \mathop {\lim
+            }\limits_{x \to 0}
+            \frac{{2x}}{{\sqrt {1 - x}  - 1}}\frac{{\left( {\sqrt {1 - x}  + 1} \right)}}{{\left( {\sqrt {1 - x}  + 1} \right)}}$
+            $\mathop {\lim }\limits_{x \to 0} \frac{{2x\left( {\sqrt {1 - x}  + 1} \right)}}{{1 - x - 1}} = \mathop
+            {\lim }\limits_{x \to 0} \frac{{2x\left( {\sqrt {1 - x}  + 1} \right)}}{{ - x}}{\text{ }}$
+            $\mathop {\lim }\limits_{x \to 0} - 2\left( {\sqrt {1 - x} + 1} \right) = - 4{\text{ }}$
+        </div>
+        </br>
+    </p>
+    <p>
+        Menggunakan Maxima:
+        <pre>
+        /*nomor 1*/
+        a:2*x;
+        b:sqrt(1-x)-1;
+        c:a/b;
+        limit(c, x,0);
+        = -4
+    </pre>
+    </p>
+</body>
+
+</html>
